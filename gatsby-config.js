@@ -34,7 +34,8 @@ module.exports = {
       options: {
         host: 'https://creador.dev',
         sitemap: 'https://creador.dev/sitemap.xml',
-        policy: [{ userAgent: '*', Disallow: '/' }]
+        policy: [{ userAgent: '*', disallow: ['/'] }],
+        output: '/robots.txt'
       }
     },
     `gatsby-plugin-gatsby-cloud`,
